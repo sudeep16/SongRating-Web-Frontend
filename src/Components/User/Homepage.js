@@ -137,7 +137,7 @@ class Homepage extends Component {
 
                 <Modal show={this.state.show} onHide={this.handleClose} animation={true}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Add Songs</Modal.Title>
+                        <Modal.Title>Rate Songs</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <Form>
