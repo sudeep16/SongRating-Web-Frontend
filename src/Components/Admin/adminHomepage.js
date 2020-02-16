@@ -138,15 +138,11 @@ class adminHomepage extends Component {
             this.state.config
         ).then((response) => {
             console.log(response.data);
+            location.href= ("/adminHomepage")
         }).catch((err) => {
-            location.href= ("/adminHomepage"),
+    
             console.log(err)
         })
-
-
-
-        }).catch((err) => {
-            console.log(err)
         })
        
     }

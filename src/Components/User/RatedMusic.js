@@ -37,7 +37,7 @@ class RatedMusic extends Component {
                 console.log(err)
             })
     }
-    componentDidMount() {
+    componentDidMount () {
         Axios.get("http://localhost:2020/uSong", this.state.config)
             .then((response) => {
                 this.setState({

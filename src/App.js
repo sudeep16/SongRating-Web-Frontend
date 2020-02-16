@@ -11,6 +11,7 @@ import Profile from "./Components/User/Profile";
 import RatedMusic from "./Components/User/RatedMusic";
 import adminHomepage from "./Components/Admin/adminHomepage";
 import userList from "./Components/Admin/userList";
+import PrivateRouter from "./Components/PrivateRouter/PrivateRoute"
 
 function App() {
   return (
@@ -21,11 +22,11 @@ function App() {
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/adminLogin" component={adminLogin} />
-            <Route path="/Homepage" component={Homepage} />
-            <Route path="/Profile" component={Profile} />
-            <Route path="/Ratedmusic" component={RatedMusic} />
-            <Route exact path="/adminHomepage" component={adminHomepage} />
-            <Route exact path="/userList" component={userList}/>
+            <PrivateRouter exact path="/Homepage" component={Homepage} />
+            <PrivateRouter exact path="/Profile" component={Profile} />
+            <PrivateRouter exact path="/Ratedmusic" component={RatedMusic} />
+            <PrivateRouter exact path="/adminHomepage" component={adminHomepage} />
+            <PrivateRouter exact path="/userList" component={userList}/>
 
           </Switch>
     </Router>

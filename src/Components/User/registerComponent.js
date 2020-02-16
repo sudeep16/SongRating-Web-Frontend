@@ -103,32 +103,32 @@ export default class Register extends React.Component {
 
                         <div className="form-group">
                             <label>Username</label>
-                            <input type="text" className="form-control" placeholder="Username" value={this.state.Username} onChange={this.usernameHandler} />
+                            <input type="text" className="form-control" placeholder="Username" value={this.state.Username} onChange={this.usernameHandler} required />
                         </div>
 
                         <div className="form-group">
                             <label>Password</label>
-                            <input type="password" className="form-control" placeholder="Password" value={this.state.Password} onChange={this.passwordHandler} />
+                            <input type="password" className="form-control" placeholder="Password" value={this.state.Password} onChange={this.passwordHandler} required />
                         </div>
 
                         <div className="form-group">
                             <label>Confirm Password</label>
-                            <input type="password" className="form-control" placeholder="Confirm Password" value={this.state.CPassword} onChange={this.cpasswordHandler} />
+                            <input type="password" className="form-control" placeholder="Confirm Password" value={this.state.CPassword} onChange={this.cpasswordHandler} required />
                         </div>
 
                         <div className="form-group">
                             <label>Email</label>
-                            <input type="email" className="form-control" placeholder="Enter Email" value={this.state.Email} onChange={this.emailHandler} />
+                            <input type="email" className="form-control" placeholder="Enter Email" value={this.state.Email} onChange={this.emailHandler} required />
                         </div>
 
                         <div className="form-group">
                             <label>Phone</label>
-                            <input type="text" className="form-control" placeholder="Enter Phone" value={this.state.Phone} onChange={this.phoneHandler} />
+                            <input type="text" className="form-control" placeholder="Enter Phone" value={this.state.Phone} onChange={this.phoneHandler} required />
                         </div>
 
                         <div className="form-group">
                             <label>Address</label>
-                            <input type="text" className="form-control" placeholder="Enter Address" value={this.state.Address} onChange={this.addressHandler} />
+                            <input type="text" className="form-control" placeholder="Enter Address" value={this.state.Address} onChange={this.addressHandler} required />
                         </div>
                         <div className="form-group">
                             <label>Gender</label> &nbsp;

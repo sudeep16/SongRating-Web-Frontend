@@ -75,8 +75,8 @@ class Homepage extends Component {
             rateSongs,
             this.state.config
         ).then((response) => {
-            console.log(response.data);
             location.href = "/Homepage";
+            console.log(response.data);
         }).catch((err) => {
             console.log(err)
         })
